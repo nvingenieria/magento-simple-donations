@@ -1,7 +1,7 @@
 # Magento Simple Donations
 This extension shows a "I want to donate $1" action button in cart, letting the user the opportunity to donate money as they shop products.
 
-You will be able to configure message (text and image), amount to donate and get a list of donations (in the admin panel).
+You will be able to configure the cart message, minimum amount to donate and get a list of donations done.
 
 ## Installation
 Install as usual:
@@ -15,7 +15,7 @@ Install as usual:
 ## Configuration
 
 #### Prepare your "Donation product"
-- Create a simple virual product with the minimum price a user donate. Complete the rest of product information as usual.
+- Create a simple virual product with the minimum price a user can donate. Complete the rest of product information as usual.
 - If you don't want this "donation product" to be visible in your catalog, set Visibility to 'Not visible individually'.
 - Take note of the created product ID.
 
