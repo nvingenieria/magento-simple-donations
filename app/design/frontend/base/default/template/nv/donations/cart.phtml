@@ -1,0 +1,19 @@
+<?php if ($this->isEnabled()) : ?>
+    <?php $_product = $this->getProduct(); ?>
+    <?php if ($_product->isSalable() && !$this->isProductInCart()) : ?>
+        <?php
+            $_amount = Mage::helper('tax')->getPrice($_product, $_product->getFinalPrice());
+            $_price  = Mage::helper('core')->currency($_amount, true, false);
+            $_addUrl = Mage::helper('checkout/cart')->getAddUrl($_product);
+            $_image  = Mage::helper('catalog/image')->init($_product, 'image')->resize(150); 
+        ?>
+        <div id="donations-block">
+            <div class="block-content">
+                <a href="<?php echo $_addUrl; ?>">
+                    <div class="image"><img src="<?php echo $_image; ?>" title="" alt="" /></div>
+                    <div class="title">Quiero donar <?php echo $_price; ?></div>
+                </a>
+            </div>
+        </div>
+    <?php endif; ?>
+<?php endif; ?>

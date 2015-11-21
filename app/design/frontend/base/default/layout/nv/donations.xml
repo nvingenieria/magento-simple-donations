@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout>
+    <checkout_cart_index>
+        <reference name="checkout.cart">
+            <block type="core/text_list" name="checkout.cart.extra" translate="label">
+                <label>Checkout Forms Extra</label>
+            </block>
+        </reference>
+        <reference name="checkout.cart.extra">
+            <block type="donations/cart" name="checkout.cart.extra.donations" template="nv/donations/cart.phtml"></block>
+        </reference>
+    </checkout_cart_index>
+</layout>

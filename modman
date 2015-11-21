@@ -1,0 +1,5 @@
+app/etc/modules/*                                   app/etc/modules/
+app/code/community/NV/Donations/*                   app/code/community/NV/Donations/
+app/design/adminhtml/default/default/layout/nv/*    app/design/adminhtml/default/default/layout/nv/
+app/design/frontend/base/default/layout/nv/*        app/design/frontend/base/default/layout/nv/
+

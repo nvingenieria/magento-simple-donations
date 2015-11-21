@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_donations_index_index>
+        <reference name="content">
+            <block type="donations/adminhtml_donations" name="donations" />
+        </reference>
+    </adminhtml_donations_index_index>
+</layout>
